@@ -1,0 +1,57 @@
+:root {
+    font-size: 16px;
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+
+    /** Fonts */
+    --font-family-primary: arial, sans-serif;
+    --font-family-secondary: "RickAndMorty", sans-serif;
+
+    /** Font weight */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /** Font size */
+    --font-size-root: 16px;
+    --font-size-xl: 1.25rem; /** 20px */
+    --font-size-lg: 1.125rem; /** 18px */
+    --font-size-base: 1rem; /** 16px */
+    --font-size-sm: .875rem; /** 14px */
+    --font-size-xs: .75rem; /** 12px */
+    --font-size-xxs: .625rem; /** 10px */
+
+    /** Colors */
+    --color-black: 0 0% 7%;
+    --color-white: 360 100% 100%;
+    --color-dark-gray: 0 0% 10%;
+    --color-blue-100: 188 84% 43%;
+    --color-blue-900: 222 21% 19%;
+
+    /** Line Height */
+    --line-height-regular: 1.5;
+}
+
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion:no-preference){
+    :root{
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-regular);
+    color: hsl(var(--color-dark-gray) / 100%);
+}

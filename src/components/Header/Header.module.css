@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30dvh;
+    background-color: hsl(var(--color-blue-900) / 100%);
+}
+
+.title {
+    --yellow: hsl(69deg 66% 62% / 100%);
+    --black: hsl(var(--color-black) / 100%);
+
+    font-size: 4rem;
+    font-family: var(--font-family-secondary);
+    color: hsl(var(--color-blue-100) / 100%);
+    text-align: center;
+    text-shadow: 1px 1px 0 var(--black),
+    -1px -1px 0 var(--black),
+    1px -1px 0 var(--black),
+    -1px 1px 0 var(--black),
+    3px 3px 0 var(--yellow),
+    -3px -3px 0 var(--yellow),
+    3px -3px 0 var(--yellow),
+    -3px 3px 0 var(--yellow),
+    4px 4px 0 var(--black),
+    -4px -4px 0 var(--black),
+    4px -4px 0 var(--black),
+    -4px 4px 0 var(--black);
+}
+
+.rick,
+.morty {
+    position: relative;
+    animation: shaking 0.5s linear infinite;;
+}
+
+.rick {
+    translate: 0 -3rem;
+    transform-origin: 50% 100%;
+}
+
+.morty {
+    translate: 0 3rem;
+}
+
+
+@keyframes shaking {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
