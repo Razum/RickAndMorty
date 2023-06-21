@@ -1,0 +1,9 @@
+.card {
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 9/10;
+    object-fit: cover;
+}

@@ -1,7 +1,7 @@
 @font-face {
-    font-family: RickAndMorty;
-    src: url('@/assets/fonts/get_schwifty.ttf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
     font-display: fallback;
+    font-family: RickAndMorty;
+    font-style: normal;
+    font-weight: 400;
+    src: url('@/assets/fonts/get_schwifty.ttf') format('opentype');
 }

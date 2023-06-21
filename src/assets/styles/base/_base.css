@@ -1,12 +1,12 @@
 :root {
-    font-size: 16px;
     color-scheme: light dark;
-    font-synthesis: none;
-    text-rendering: optimizelegibility;
+    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-size-adjust: 100%;
+    font-synthesis: none;
     -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizelegibility;
+    text-size-adjust: 100%;
 
     /** Fonts */
     --font-family-primary: arial, sans-serif;
@@ -36,6 +36,9 @@
 
     /** Line Height */
     --line-height-regular: 1.5;
+
+    /** Grid */
+    --grid-gap: 1rem;
 }
 
 *,::after,::before{
@@ -49,9 +52,9 @@
 }
 
 body {
+    color: hsl(var(--color-dark-gray) / 100%);
     font-family: var(--font-family-primary);
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-regular);
-    color: hsl(var(--color-dark-gray) / 100%);
 }

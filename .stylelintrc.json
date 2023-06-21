@@ -1,5 +1,5 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-css-modules", "stylelint-config-prettier"],
+  "extends": ["stylelint-config-standard", "stylelint-config-css-modules", "stylelint-config-idiomatic-order", "stylelint-config-prettier"],
   "rules": {
     "selector-class-pattern": "[a-zA-Z]+"
   }

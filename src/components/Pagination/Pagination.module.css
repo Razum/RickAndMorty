@@ -1,0 +1,72 @@
+.pagination {
+    display: inline-flex;
+    padding: 0;
+    border: 1px solid hsl(var(--color-dark-gray) / 25%);
+    border-radius: 8px;
+    box-shadow: 0 1px 2px hsl(var(--color-dark-gray) / 5%);
+    font-size: 0.85rem;
+    list-style: none;
+}
+
+:where(.previous, .page, .next) {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.page {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid hsl(var(--color-dark-gray) / 30%);
+    line-height: 1;
+    text-decoration: none;
+}
+
+.pagination li:nth-child(2) .page {
+    border-left: 1px solid hsl(var( --color-dark-gray) / 30%);
+}
+
+.previous,
+.next {
+    display: inline-flex;
+    height: 2.5rem;
+    align-items: center;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.icon {
+    position: relative;
+    top: -0.1rem;
+    width: 1.15rem;
+    height: 1.15rem;
+}
+
+.previous {
+    padding: 0 1rem 0 1.25rem;
+}
+
+.previous .icon {
+    margin-right: 0.35rem;
+}
+
+.next {
+    padding: 0 1.25rem 0 1rem;
+}
+
+.next .icon {
+    margin-left: 0.35rem;
+}
+
+.isActive {
+    background-color: hsl(var( --color-dark-gray) / 10%);
+    cursor: default;
+    text-decoration: none;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}

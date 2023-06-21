@@ -41,6 +41,7 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "comma-dangle": ["error", "never"],
     "react/button-has-type": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "jsx-a11y/label-has-associated-control": "off"
   }
 }
