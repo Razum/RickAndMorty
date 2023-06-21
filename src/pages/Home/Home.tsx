@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import SearchInput from '@/components/SearchInput';
 import Pagination from '@/components/Pagination';
 import Characters from '@/pages/Home/components/Characters';
@@ -22,6 +23,9 @@ const Home = () => {
         setPage(selectedItem.selected);
     return (
         <>
+            <Helmet>
+                <title>Rick and Morty - Characters</title>
+            </Helmet>
             <SearchInput onChange={handleChange} />
             <Characters characters={characters} />
             <Pagination

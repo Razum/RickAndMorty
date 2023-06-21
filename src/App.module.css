@@ -3,6 +3,8 @@
     max-width: 66em;
     flex-direction: column;
     padding: 3rem 2rem;
+    container-name: main;
+    container-type: inline-size;
     gap: 3rem;
     margin-inline: auto;
 }

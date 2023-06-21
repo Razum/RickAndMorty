@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { HelmetProvider } from 'react-helmet-async';
 import { GraphQLClient, ClientContext } from 'graphql-hooks';
 import App from './App';
 import '@/assets/styles/app.css';
@@ -10,8 +11,10 @@ const client = new GraphQLClient({
 
 ReactDOM.createRoot(document.getElementById('app') as HTMLElement).render(
     <React.StrictMode>
-        <ClientContext.Provider value={client}>
-            <App />
-        </ClientContext.Provider>
+        <HelmetProvider>
+            <ClientContext.Provider value={client}>
+                <App />
+            </ClientContext.Provider>
+        </HelmetProvider>
     </React.StrictMode>
 );

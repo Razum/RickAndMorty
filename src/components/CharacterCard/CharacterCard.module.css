@@ -1,9 +1,46 @@
 .card {
     position: relative;
+    display: flex;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 50%;
 }
 
 .image {
     width: 100%;
+    height: 100%;
     aspect-ratio: 9/10;
     object-fit: cover;
+}
+
+.stamp {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    rotate: -25deg;
+    translate: -50% -50%;
+}
+
+.isDead {
+    filter: grayscale(100%) brightness(70%);
+}
+
+.content {
+    width: 50%;
+    padding: 1rem;
+    background-color: hsl(var(--color-dark-gray) / 5%);
+}
+
+.label {
+    font-size: 0.7rem;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+}
+
+.value {
+    font-size: 1.25rem;
+    margin-block-end: 1rem;
 }

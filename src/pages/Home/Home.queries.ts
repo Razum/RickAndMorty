@@ -10,6 +10,7 @@ query Query($page: Int, $name: String ) {
     results {
       id
       name
+      gender
       species
       status
       image

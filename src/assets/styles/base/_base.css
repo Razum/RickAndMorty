@@ -33,12 +33,18 @@
     --color-dark-gray: 0 0% 10%;
     --color-blue-100: 188 84% 43%;
     --color-blue-900: 222 21% 19%;
+    --color-red: 355 73% 50%;
 
     /** Line Height */
     --line-height-regular: 1.5;
 
     /** Grid */
     --grid-gap: 1rem;
+
+    /** Breakpoints */
+    --breakpoint-sm: 33em; /** ~540px */
+    --breakpoint-md: 52em; /** ~832px */
+    --breakpoint-lg: 80em; /** ~1280px */
 }
 
 *,::after,::before{

@@ -3,6 +3,7 @@
     min-height: 30dvh;
     align-items: center;
     justify-content: center;
+    padding: 0 2rem;
     background-color: hsl(var(--color-blue-900) / 100%);
 }
 
@@ -13,6 +14,7 @@
     color: hsl(var(--color-blue-100) / 100%);
     font-family: var(--font-family-secondary);
     font-size: 4rem;
+    letter-spacing: 0.3rem;
     text-align: center;
     text-shadow: 1px 1px 0 var(--black),
     -1px -1px 0 var(--black),
