@@ -2,9 +2,16 @@
     display: flex;
     max-width: 66em;
     flex-direction: column;
-    padding: 3rem 2rem;
     container-name: main;
     container-type: inline-size;
     gap: 3rem;
     margin-inline: auto;
+    padding-block: 3rem;
+    padding-inline: 1rem;
+}
+
+@media screen and (width >= 33em) {
+    .main {
+        padding-inline: 2rem;
+    }
 }

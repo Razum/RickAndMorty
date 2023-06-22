@@ -4,7 +4,7 @@
     grid-template-columns: 1fr;
 }
 
-@container main (min-width: 33em) {
+@container main (min-width: 52em) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }

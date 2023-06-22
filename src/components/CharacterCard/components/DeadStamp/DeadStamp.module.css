@@ -1,6 +1,5 @@
 .stamp {
     display: inline-block;
-    padding: 0 2rem;
     border: 0.4rem double currentcolor;
     border-radius: 8px;
     color: hsl(var(--color-red) / 100%);
@@ -8,4 +7,5 @@
     font-weight: var(--font-weight-bold);
     mask-image: url("./grunge.png");
     mask-size: 200%;
+    padding-inline: 2rem;
 }

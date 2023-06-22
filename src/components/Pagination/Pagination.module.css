@@ -45,19 +45,21 @@
 }
 
 .previous {
-    padding: 0 1rem 0 1.25rem;
+    padding-block: 0;
+    padding-inline: 1rem 1.25rem;
 }
 
 .previous .icon {
-    margin-right: 0.35rem;
+    margin-inline-end: 0.35rem;
 }
 
 .next {
-    padding: 0 1.25rem 0 1rem;
+    padding-block: 0;
+    padding-inline: 1.25rem 1rem;
 }
 
 .next .icon {
-    margin-left: 0.35rem;
+    margin-inline-start: 0.35rem;
 }
 
 .isActive {

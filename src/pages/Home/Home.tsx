@@ -9,11 +9,12 @@ import styles from '@/pages/Home/Home.module.css';
 const Home = () => {
     const [page, setPage] = useState(0);
     const [searchTerm, setSearchTerm] = useState('');
-    const { data } = useCharacters(page, searchTerm);
+    const { data, error, loading } = useCharacters(page, searchTerm);
 
     const response = data?.characters;
     const characters = response?.results || [];
     const info = response?.info || {};
+    const pageCount = info.pages || 0;
 
     useEffect(() => setPage(0), [searchTerm]);
 
@@ -27,13 +28,21 @@ const Home = () => {
                 <title>Rick and Morty - Characters</title>
             </Helmet>
             <SearchInput onChange={handleChange} />
-            <Characters characters={characters} />
-            <Pagination
-                className={styles.pagination}
-                pageCount={info.pages || 0}
-                onPageChange={handlePageClick}
-                forcePage={page}
-            />
+            {!!characters.length && <Characters characters={characters} />}
+            {!loading && !characters.length && (
+                <div className={styles.warning}>No characters found</div>
+            )}
+            {!!error && (
+                <div className={styles.warning}>Something went wrong</div>
+            )}
+            {pageCount > 1 && (
+                <Pagination
+                    className={styles.pagination}
+                    pageCount={pageCount}
+                    onPageChange={handlePageClick}
+                    forcePage={page}
+                />
+            )}
         </>
     );
 };
