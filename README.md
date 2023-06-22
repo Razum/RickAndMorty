@@ -1,0 +1,1 @@
+http://rickandmorty.razumieienko.com/
